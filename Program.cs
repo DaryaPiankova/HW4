@@ -1,12 +1,8 @@
 ﻿Console.Clear();
 Console.WriteLine("Введите число A");
 int a= Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("Введите число B");
-int b= Convert.ToInt32(Console.ReadLine());
-
-int result=a;
-for(int i=0; i<b-1; i++){
-    result=result*a;
+int sum=0;
+for(;a!=0;a=a/10){
+sum=sum+a%10;
 }
-Console.WriteLine(result);
+Console.WriteLine(sum);
